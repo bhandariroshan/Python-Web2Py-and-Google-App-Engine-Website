@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+	<script type="text/javascript">
+		function changeHeight()
+		{
+			(document.getElementById("divContent")).style.height="570px";
+			(document.getElementById("divForm")).style.height="650px";
+		}
+		onload=changeHeight();
+	</script>
+    <h2>Signup</h2>
+    <form method="post">
+      <table>
+        <tr>
+          <td class="label">
+            Username
+          </td>
+          <td>
+            <input type="text" name="username" value="{{username}}">
+          </td>
+          <td class="error">
+            {{error_username}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Password
+          </td>
+          <td>
+            <input type="password" name="password" value="">
+          </td>
+          <td class="error">
+            {{error_password}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Verify Password
+          </td>
+          <td>
+            <input type="password" name="verify" value="">
+          </td>
+          <td class="error">
+            {{error_verify}}
+          </td>
+        </tr>
+		
+		<tr>
+          <td class="label">
+            Password to create User
+          </td>
+          <td>
+            <input type="password" name="createuser" value="">
+          </td>
+          <td class="error">
+            {{error_create_user}}
+          </td>
+        </tr>
+		
+        <tr>
+          <td class="label">
+            Email 
+          </td>
+          <td>
+            <input type="text" name="email" value="{{email}}">
+          </td>
+          <td class="error">
+            {{error_email}}
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit">
+    </form>
+{% endblock %}

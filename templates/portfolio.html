@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+	<script>
+		function changeHeight()
+		{
+			var count = {{count}};
+			var heightContent = 860;
+			var heightForm = 940;
+			for ( var i =0; i<count; i++)
+			{	
+				heightContent +=250;
+				heightForm +=250;
+			}
+			document.getElementById("divContent").style.height = String(heightContent) + "px";
+			document.getElementById("divForm").style.height = String(heightForm) + "px";
+		}
+		onload=changeHeight();
+	</script>
+	
+	<p style="text-align:center; font-size:24px; font-family:Verdana">
+	<b>My Projects</b>
+	</p>
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %}
+
+{% endblock %}

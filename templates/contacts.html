@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+	<script type="text/javascript">
+	 $(document).ready(function(){
+	 $("#maps").hide();});
+	function changeHeight()
+	{
+	(document.getElementById("divContent")).style.height="1720px";
+	(document.getElementById("divForm")).style.height="1800px";
+	}
+	onload=changeHeight();
+	$(document).ready(function(){$("#flip").click(function(){$("#maps").slideToggle("slow");});});
+	</script>
+	<div id ="contactMe">
+		<p style="text-align:center; font-family:verdana; font-size:20px; " ><b>Contact Me</b> </p>
+		<hr class="hrClass">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >Phone Me:+977-9808-166-147 </p>
+		<hr class="hrClass">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >Find Me on Social Networks:</p>
+		<hr class="hrClass">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >&nbsp;&nbsp;&nbsp;&nbsp;Facebook: 
+		<a href="http://www.facebook.com/bhandariroshan" target="_blank">Me on Facebook</a>
+		</p>
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >&nbsp;&nbsp;&nbsp;&nbsp;Google Plus: 
+		<a href="https://plus.google.com/100198941103722043654" target="_blank">Me on Google Plus</a>
+		</p>
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn: 
+		<a href="http://www.linkedin.com/pub/roshan-bhandari/36/742/3a2" target="_blank">Me on LinkedIn</a>
+		</p>
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;">&nbsp;&nbsp;&nbsp;&nbsp;Twitter: 
+		<a href="http://twitter.com/bhanduroshan" target="_blank">Me on Twitter</a>
+		</p>
+		<hr class="hrClass">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >Follow my Blogs:</p>
+		<hr class="hrClass">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >&nbsp;&nbsp;&nbsp;&nbsp;Computer Programming: 
+		<a href="http://programming-project.blogspot.com" target="_blank">Computer Programming Project</a>
+		</p>
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >&nbsp;&nbsp;&nbsp;&nbsp;Techhnology: 
+		<a href="http://techtulip.blogspot.com" target="_blank">TechTulip</a>
+		</p>
+		<!--
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >&nbsp;&nbsp;&nbsp;&nbsp;Thorangla: 
+		<a href="http://thorangla.com" target="_blank">thorangla.com</a>
+		</p>
+		-->
+		<hr class="hrClass">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >Skype Name:  bhandari_roshan
+		<hr class="hrClass">
+		</p>
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:250px;margin-right:200px;" >
+		E-mail me:
+		<a href="mailto:brishi98@gmail.com?Subject=Hello%20again">
+		Send Mail</a>
+		</p>
+		<hr class="hrClass">
+		<div id="flip">
+		<p style="text-align:left; font-family:verdana; font-size:16px; margin-left:250px;margin-right:200px;"><b>Click here to slide My Maps down or up</b></p>
+		</div>
+		<div id="maps">
+			<p><b> My Home</b></p>
+			<hr  class="hrClass">
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=%2B27%C2%B0+40'+15.87%22,+%2B85%C2%B0+21'+58.33%22+(27.671074,+85.366202)&amp;hl=en&amp;geocode=Cdr84Fkog0BwFSI6pgEdupUWBQ&amp;sll=27.67107,85.36621&amp;sspn=0.00129,0.002642&amp;t=h&amp;g=27.671074,85.366202&amp;dirflg=ht&amp;doflg=ptk&amp;mra=mift&amp;ie=UTF8&amp;ll=27.67107,85.36621&amp;spn=0.00129,0.002642&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=%2B27%C2%B0+40'+15.87%22,+%2B85%C2%B0+21'+58.33%22+(27.671074,+85.366202)&amp;hl=en&amp;geocode=Cdr84Fkog0BwFSI6pgEdupUWBQ&amp;sll=27.67107,85.36621&amp;sspn=0.00129,0.002642&amp;t=h&amp;g=27.671074,85.366202&amp;dirflg=ht&amp;doflg=ptk&amp;mra=mift&amp;ie=UTF8&amp;ll=27.67107,85.36621&amp;spn=0.00129,0.002642" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+			<hr class="hrClass">
+			<p><b> My College</b></p>
+			<hr class="hrClass">
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=Pulchowk+Engineering+Campus,+Patandhoka+Road,+Patan+44700,+Nepal&amp;daddr=27.682015,85.318539&amp;hl=en&amp;geocode=CXw1dwvEu77rFRtopgEdMu4VBSn5ic4GthnrOTEFnhOOL-cjdA%3B&amp;sll=27.681958,85.318556&amp;sspn=0.00129,0.002642&amp;t=h&amp;mra=mift&amp;mrsp=1&amp;sz=19&amp;ie=UTF8&amp;ll=27.681956,85.318558&amp;spn=0.001663,0.00228&amp;z=18&amp;iwloc=ddw1&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=Pulchowk+Engineering+Campus,+Patandhoka+Road,+Patan+44700,+Nepal&amp;daddr=27.682015,85.318539&amp;hl=en&amp;geocode=CXw1dwvEu77rFRtopgEdMu4VBSn5ic4GthnrOTEFnhOOL-cjdA%3B&amp;sll=27.681958,85.318556&amp;sspn=0.00129,0.002642&amp;t=h&amp;mra=mift&amp;mrsp=1&amp;sz=19&amp;ie=UTF8&amp;ll=27.681956,85.318558&amp;spn=0.001663,0.00228&amp;z=18&amp;iwloc=ddw1" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		</div>	
+	</div>
+{% endblock %}

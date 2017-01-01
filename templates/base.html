@@ -1,0 +1,103 @@
+<!DOCTYPE html>	
+<html lang="en">
+	<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="/static/main.css" />
+	<script src="/static/jquery-1.4.1.js"></script>
+	<title>Bhandari Roshan's Homepage</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<div id="divForm" class="classForm">
+		
+			<div id="divSpace1" style="height:15px; width:100%;"></div>
+			<center>
+			<div id="divMenu" class="classMenu">
+					<a href="/" class="Menus">&nbsp;Home&nbsp;</a>
+					<a href="/resume" class="Menus">&nbsp;My Resume&nbsp;</a>
+					<a href="/portfolio/" class="Menus">&nbsp;My Projects&nbsp;</a> 
+					<a href="/contacts" class="Menus">&nbsp;Contact Me&nbsp;</a>
+			</div>
+			</center>
+			<div style="height:15px; width:100%;"></div>
+			
+			<center>
+			<div id="divContent" class="classContent">
+
+				<div  style="height:80px; width:100%;">
+					<h1>Bhandari Roshan's Homepage </h1>
+				</div>
+				
+				<div id="addContents" >
+				  {% block content %}
+				  {% endblock %}
+				</div>
+				
+				<div  style="height:0px; width:80%;"></div>
+				
+				<div id="footer "class="classfooter">
+					<!-- Begin Social Media and Download Links -->
+					<ul class="classfooterIcons1">			
+						<li>
+						<a href="https://www.facebook.com/bhandariroshan" target="_blank" title="Find me on Facebook">
+						<img src="/images/facebook.png" width="32" height="32" alt="Find me on Facebook">
+						</a>
+						</li>
+						
+						<li>
+						<a href="https://plus.google.com/100198941103722043654" target="_blank" title="Find me on Google Plus">
+						<img src="/images/googleplus.png" width="32" height="32" alt="Find me on Google Plus">
+						</a>
+						</li>
+						
+						<li>
+						<a href="http://www.linkedin.com/pub/roshan-bhandari/36/742/3a2" target="_blank" title="Find me on LinkedIn">
+						<img src="/images/linkedin.png" width="32" height="32" alt="Find me on LinkedIn">
+						</a>
+						</li>
+						
+						<li>
+						<a href="http://twitter.com/bhanduroshan" target="_blank" title="Follow Me on Twitter!">
+						<img src="/images/twitter.png" width="32" height="32" alt="Follow Me on Twitter!">
+						</a>
+						</li>	
+
+						<li>
+						<a href="/static/resume.pdf" target="_blank" title="Download My Resume">
+						<img src="/images/downloadresume.png" width="32" height="32" alt="Download My Resume">
+						</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div  style="height:20px; width:80%;"></div>
+				
+				<div id="credits" class="classCredits">
+					Copyright @
+					<a href="/" target="_blank" title="Roshan Bhandari">Roshan Bhandari</a>
+				</div>
+				<!-- End Social Media and Download Links -->
+			</div>
+			</center>
+		</div>
+		<!-- Start of StatCounter Code for Default Guide -->
+			<script type="text/javascript">
+				var sc_project=8485216; 
+				var sc_invisible=1; 
+				var sc_security="4213496b"; 
+				var scJsHost = (("https:" == document.location.protocol) ?
+				"https://secure." : "http://www.");
+				document.write("<sc"+"ript type='text/javascript' src='" + scJsHost +"statcounter.com/counter/counter.js'></"+"script>");
+			</script>
+			<noscript>
+			<div class="statcounter">
+			<a title="web analytics"href="http://statcounter.com/" target="_blank">
+			<img class="statcounter"src="https://c.statcounter.com/8485216/0/4213496b/1/" alt="web analytics">
+			</a>
+			</div>
+			</noscript>
+		<!-- End of StatCounter Code for Default Guide -->
+	</body>
+</html>

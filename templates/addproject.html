@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+		<script type="text/javascript">
+		function changeHeight()
+		{
+			(document.getElementById("divContent")).style.height="1020px";
+			(document.getElementById("divForm")).style.height="1100px";
+		}
+		onload=changeHeight();
+	</script>
+	<div class="welcome">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:-10%;"><b>Welcome {{user}} !!!</b></p>
+		</div>
+	<div class="logout"> 
+		<a href="/logout">
+		<p style="text-align:left; font-family:verdana; font-size:14px; margin-left:90%;" ><b>Log Out</p></b>
+		</a> 
+	</div>
+	<p style="text-align:center; font-family:verdana; font-size:20px; " ><b>Add New Project</b> </p>
+
+    <form method="post">
+        <p>Project Title:
+        <input type="text" name="title" class ="classProjectTitle" value="{{title}}">
+		&nbsp;&nbsp;
+        Subject:
+        <input type="text" name="subject" class ="classProjectSubject" value="{{subject}}">
+		&nbsp;&nbsp;
+        Group Members:
+        <input type="text" name="members" class ="classProjectSubject" value="{{members}}">
+		</p>
+		
+        <div>Description of Project:</div>
+        <textarea name="content" cols ="90" rows ="20" disable="enabled">{{content}}</textarea>
+		
+	  
+      <div class="error">{{error}}</div>
+      <input type="submit">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<div class="post">
+  <div class="post-heading">
+    <div class="post-title">
+      {{p.title}}
+    </div>
+		
+    <div class="post-date">
+      <p><b>Posted On: </b>{{p.created.strftime("%b %d, %Y")}}</p>
+    </div>	
+	<div class="postDetails">
+      <p style="text-align:left;"><b>Subject of project: </b>{{p.subject}}</br>
+	  <b>Project Members: </b>{{p.project_members}}</p>
+    </div>
+	
+	<hr class="hrClass1">
+  </div>
+
+  <div class="post-content">
+    {{p._render_text | safe}}
+	<br>
+	<a href="/comments/?postid={{id}}" style="text-decoration:none;" ><font size="3" color="#ff0000">Read more</font></a>
+  </div>
+</div>

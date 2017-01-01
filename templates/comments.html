@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<script type="text/javascript">	
+		$(document).ready(function(){
+		$("#makeComment").hide();});
+		$(document).ready(function(){
+		$("#clickToComment").click(function(){
+		$("#makeComment").slideToggle("slow");
+		});
+		});
+		
+
+		function changeHeight()
+		{
+			var count = {{count}};
+			var heightContent = 1000;
+			var heightForm = 1080;
+			for ( var i =0; i<count; i++)
+			{	
+				heightContent +=100;
+				heightForm +=100;
+			}
+			document.getElementById("divContent").style.height = String(heightContent) + "px";
+			document.getElementById("divForm").style.height = String(heightForm) + "px";
+			
+		}
+		onload=changeHeight();
+		
+	</script>
+	<div class="post">
+		<div class="post-heading">
+		<div class="post-title">
+		{{post.title}}
+		</div>
+		
+		<div class="post-date">
+		<p><b>Posted On: </b>{{post.created.strftime("%b %d, %Y")}}</p>
+		</div>	
+		<div class="postDetails">
+		<p style="text-align:left;"><b>Subject of project: </b>{{post.subject}}</br>
+		<b>Project Members: </b>{{post.project_members}}</p>
+		</div>
+	
+		<hr class="hrClass1">
+		</div>
+
+		<div class="post-content">
+		{{post.content}}
+		</div>
+	</div>
+	<div id="divComment" class = "classComment">
+		<div id="commentCount" class = "classCommentCount">
+			<h3 style="margin-left:-330px;"><u>Comments({{count}}:)</u></h3>
+		</div>
+		
+		<div id = "commentsMade" class="classCommentsMade">
+			  {% for c in comments %}
+				<p style="text-align:left;"><b>{{c.commentername}}</b> said:<span> {{c.commenttext}}</span></p>
+				<hr style="margin-left:0px;">
+			  {% endfor %}
+		</div>
+		
+		<a href="/portfolio/" style="margin-left:-300px;">Return To Main Projects</a>
+		
+		<div id="clickToComment">
+			<h3 style="margin-left:-200px;"><u>Click here to add your comment:</u></h3>
+		</div>
+		
+		<div id="makeComment"  class="classMakeComment">
+			<form method="post">
+			<div style="margin-left:-405px;"><b>Name: </b></div>
+			<input type="text" name="name" style="margin-left:-50px; width:400px;" value="{{name}}">
+			<div style="margin-left:-390px;"><b>Comment: </b></div>
+			<textarea name="comment" cols ="48" rows ="15" disable="enabled" style="margin-left:-42px;">{{comment}}</textarea>
+			</br>
+			<input type="submit" value="Save">
+			</form>
+		</div>
+	</div>
+{% endblock %}
