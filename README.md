@@ -9,3 +9,5 @@ The code is hosted in Google App Engine. I builtit few years back, while I was l
 3. Comments.Py: Contains datamodels for comments received on the website.
 
 4. App.Yaml: Contains settings and others for the website
+
+5. Users.py: Contains datamodels for User Registration
